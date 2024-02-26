@@ -1,6 +1,7 @@
 All ye who attend this class, welcome to your salvation!
 
 I am aware that dart and flutter is confusing af especially when you've just started learning it, BUT FEAR NOT FOR I AM HERE TO HELP!
+
 For context, I've failed this class about 2 times and do not intend to redo it again.
 
 In order to achieve that goal, I've decided to:
