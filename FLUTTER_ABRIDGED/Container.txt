@@ -1,0 +1,28 @@
+alignment (or AlignmentGeometry) -> align child within the container
+
+child -> the thing inside the ontainer
+
+transform -> transformation matrix to apply before painting the container
+
+transformAlignment -> alignment of the orignin, relative to container size, if transform is specified
+
+decoration -> to paint behind child
+
+foregroundDecoration -> paint in front of child
+
+clipBehavior -> how the clip acts when Container.behavior is not null
+	IOW, changing background or something? idk
+
+color -> color of what's behind child
+
+constraints -> additional constraints to apply to child
+
+hashCode -> hash code of this object
+
+key -> controls how one widget replaces another widget in the tree, may need more explanation
+
+margin -> empty space surrounding the decoration and child
+
+padding -> same as margin but inside yak
+
+runtimeType -> returns runtme type of object
