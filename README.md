@@ -15,6 +15,6 @@ Why am I doing this? boredom, professionally undiagnosed autism, spite and succe
 
 Is this free? yes, all the best things are, I love free stuff
 
-!!DISCLAIMER!! I may not update this for future versions of flutter and it may not be 100% accurate, but it will stil help
+!!DISCLAIMER!! I may not update this for future versions of flutter/dart and it may not be 100% accurate, but it will stil help
 
 welcome:)
