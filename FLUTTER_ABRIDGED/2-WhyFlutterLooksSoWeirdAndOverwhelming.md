@@ -45,7 +45,7 @@ Dart has the same concepts. However, they do things differently:
             DartExample(this.someProperty, this.anotherProperty);
         }
 
-That basically did the same thing as that long ass java class. Quick and efficient (twss roflmao)
+That basically did the same thing as that long ass java class. Quick and efficient (twss roflmao).
 In spirit of that quick and efficient mindset, you will often see flutter code like this
 
         SomeWidget aaaaaaaaaaaaaaaaaaaaaaaaaaa {
@@ -57,9 +57,9 @@ In spirit of that quick and efficient mindset, you will often see flutter code l
 
 Also, with dart, you can have optionnal properties,
     meaning that you could just not put those in when initializing the class
-    and chose to put some parameters in
-    thats the thing that was soo fcking confusing to me
-    hated it, but its pretty useful ngl
+    and chose to put some parameters in.
+    Thats the thing that was soo fcking confusing to me.
+    Hate it, but it's pretty useful ngl
 
         class DartExample{
             var someProperty;
