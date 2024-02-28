@@ -1,0 +1,45 @@
+instead of
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          leading: Icon(Icons.menu),
+          title: Text("text"),
+          actions: [
+            IconButton(onPressed: search, icon: Icon(Icons.search)),
+            IconButton(onPressed: settings, icon: Icon(Icons.settings))
+          ],
+        );,
+        body: Center(
+          child: Text('Hello World!'),
+        ),
+      ),
+    );
+  }
+
+
+do this
+  AppBar myAppBar() {
+    return AppBar(
+      leading: Icon(Icons.menu),
+      title: Text("text"),
+      actions: [
+        IconButton(onPressed: search, icon: Icon(Icons.search)),
+        IconButton(onPressed: settings, icon: Icon(Icons.settings))
+      ],
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: myAppBar(),
+        body: Center(
+          child: Text('Hello World!'),
+        ),
+      ),
+    );
+  }
