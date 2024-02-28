@@ -11,6 +11,7 @@ For long explanations, I will put a tl;dr in the beginning in case reading isn't
 May thine gods guide thee onto the path to pass this class!
 
 !!DISCLAIMER!!
+
     -There is swearing in these documents
     -I will not apologize for the swearing
     -There's also a lot of "ThAt'S wHaT sHe SaId" thingys
