@@ -14,6 +14,6 @@ May thine gods guide thee onto the path to pass this class!
 
     -There is swearing in these documents
     -I will not apologize for the swearing
-    -There's also a lot of "ThAt'S wHaT sHe SaId" thingys
+    -There's also a lot of those "ThAt'S wHaT sHe SaId" thingys
     -I will not apologize for them either
     -For me to be comfortable and do this properly, I need them ;-;
