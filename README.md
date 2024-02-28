@@ -11,7 +11,7 @@ In order to achieve that goal, I've decided to:
     -explain why things work the way they do
     -make little cheatsheets for the basics of flutter and dart
 
-Why am I doing this? boredom, professionally undiagnosed autism, spite and success
+Why am I doing this? boredom, professionally undiagnosed autism, spite, frustration, success and altruism
 
 Is this free? yes, all the best things are, I love free stuff
 
