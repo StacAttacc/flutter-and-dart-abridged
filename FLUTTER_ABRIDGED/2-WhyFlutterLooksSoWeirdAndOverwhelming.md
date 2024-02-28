@@ -1,4 +1,6 @@
-        tl;dr -> dart constructors with optional parameters and properties that can have other classes with their own optionnal parameters in
+        tl;dr 
+        -dart constructors with optional parameters
+        -properties that can have other classes with their own optionnal parameters in
 
 
 Flutter looks weird bbecause it uses dart and dart has it's little quirks.
