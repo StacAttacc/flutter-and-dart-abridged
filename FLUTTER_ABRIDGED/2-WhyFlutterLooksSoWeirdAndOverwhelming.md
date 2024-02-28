@@ -4,7 +4,7 @@
 
 
 Flutter looks weird because it uses dart and dart has it's little quirks.
-The main reason as to why it looks that way is because of the way dart does class constructors.
+The main reason as to why it looks like that is because of the way dart does it's constructors.
 
 REFER TO THE DART_ABRIDGED FOLDER FOR MORE DETAILS
 
