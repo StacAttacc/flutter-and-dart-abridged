@@ -37,6 +37,7 @@ To compare here's how it's usually done in java:
 
 That is what I am used to, that's probably also what you're used to, it's clean it's neat, I like the way it looks.
 Dart has the same concepts. However, they do things differently:
+
         class DartExample{
             var someProperty;
             var anotherProperty;
