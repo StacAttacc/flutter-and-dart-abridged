@@ -1,5 +1,5 @@
         tl;dr 
-        -dart constructors with optional parameters
+        -constructors with optional parameters
         -properties that can have other classes with their own optionnal parameters in
 
 
