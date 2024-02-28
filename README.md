@@ -2,7 +2,7 @@ All ye who attend this class, welcome to thine salvation!
 
 I am aware that dart and flutter is confusing especially when you've just started learning it, BUT FEAR NOT FOR I AM HERE TO HELP!
 
-For context, I've failed this class about 2 times and do not intend to retake it again.
+For context, I've failed this class about 2 times and do not intend to retake it again! I also want to avoid you the same fate.
 
 In order to achieve that goal, I've decided to:
 
