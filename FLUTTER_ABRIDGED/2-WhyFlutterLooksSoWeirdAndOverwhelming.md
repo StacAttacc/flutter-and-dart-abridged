@@ -9,6 +9,7 @@ The main reason as to why it looks that way is because of the way dart does clas
 REFER TO THE DART_ABRIDGED FOLDER FOR MORE DETAILS
 
 To compare here's how it's usually done in java:
+
         public class JavaExampe{
             private String someProperty;
             private String anotherProperty;
