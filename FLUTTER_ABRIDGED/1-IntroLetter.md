@@ -1,3 +1,5 @@
+tl;dr -> swearing, yapping, explaining the point of this folder
+
 Good fellows,
 
 Flutter is confusing as fuck (at first).
