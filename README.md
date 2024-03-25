@@ -6,7 +6,7 @@ For context, I've failed this class about 2 times and do not intend to retake it
 
 In order to achieve that goal, I've decided to:
 
-    -take all that can be learned from the teacher's class notes and put them in a simpler, easier to understand format (imo)
+    -take all that can be learned in class and put them in a simpler, easier to understand format (imo)
     -give little tips and tricks to make coding more enjoyable
     -explain why things work the way they do
     -make little cheatsheets for the basics of flutter and dart
