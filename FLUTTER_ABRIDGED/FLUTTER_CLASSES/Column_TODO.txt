@@ -1,2 +1,0 @@
-children -> list of widgets
-clip behavior -> 

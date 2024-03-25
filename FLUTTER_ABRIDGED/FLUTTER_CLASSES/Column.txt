@@ -1,0 +1,27 @@
+it just displays its children ina vertical way
+
+Column(
+	children: <Widget>[],
+		the column's children, coud be any other class if I 				recall correctly
+	
+	crossAxisAlignment: CrossAxisAllignment./*start center or end*/,
+		where it'll put the children
+
+	mainAxisSize: MainAxisSize./*a size, usually*/,
+		how much space should be occupied in the main axis
+		decide what to do with the size of the children
+		decide what to do with the extra space after the children
+		
+	
+	textBaseline: TextBaseline./*type of baseline*/,
+		basically the vertical allignment of the text
+
+	textDirection: TextDirection./*ltr or rtl*/
+		some languages are read right to left,
+		pthers are read left to right, this helps with that
+
+	verticalDirection: VerticalDirection./*downor up*/
+		usually the children go from top to bottom
+		with this, you can make the go from the bottom to the top
+			drake be like
+)
