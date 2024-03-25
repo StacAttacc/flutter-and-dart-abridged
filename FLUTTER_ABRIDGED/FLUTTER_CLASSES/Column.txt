@@ -1,4 +1,4 @@
-it just displays its children ina vertical way
+it just displays its children in a vertical way
 
 Column(
 	children: <Widget>[],
