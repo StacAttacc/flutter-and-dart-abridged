@@ -1,28 +1,35 @@
-alignment (or AlignmentGeometry) -> align child within the container
+basically a box you can put something in (twss)
+	different from SizedBox
 
-child -> the thing inside the ontainer
+Container(
+	child: /*the child basically*/,
+		what will be inside the container
 
-transform -> transformation matrix to apply before painting the container
+	alignment: Alignmet./*topLeft, topCentre, right, etc.*/
+		where the child will be alligned
 
-transformAlignment -> alignment of the orignin, relative to container size, if transform is specified
+	margin: EdgeInsets./*all, top, right, etc.*/,
+		more or less space around outside the widget
 
-decoration -> to paint behind child
+	padding: EdgeInsets./*all, top, right, etc.*/,
+		more or less space around inside the widget
 
-foregroundDecoration -> paint in front of child
+	constraints: BoxConstraints(/*min/maxWidth/Height*/),
+		how BIG/small the container should be
 
-clipBehavior -> how the clip acts when Container.behavior is not null
-	IOW, changing background or something? idk
+	color: Colors./*a predefined color, or make your own*/,
+		background color of the container basically
 
-color -> color of what's behind child
+	decoration: BoxDecoration(),
+		more background custom stuff like boorders, shadows, etc.
 
-constraints -> additional constraints to apply to child
+	foregroundDecoration: BoxDecoration(),
+		basically the same as decoration, but it's in front
+		of child instead of behind it
 
-hashCode -> hash code of this object
+	transform: Transform./*rotate, translate, etc.*/
+		basically the second math class with matrixes
+		and all that
 
-key -> controls how one widget replaces another widget in the tree, may need more explanation
-
-margin -> empty space surrounding the decoration and child
-
-padding -> same as margin but inside yak
-
-runtimeType -> returns runtme type of object
+	transformAlignment: 	
+)
