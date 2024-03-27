@@ -1,0 +1,22 @@
+horizontal line that separates widgets
+usually used in listView, column or rows
+
+Divider(
+	height: 1.0,
+		height of the divider
+		default is 16.0
+	
+	thickness: 2.0,
+		the thickness of the divider
+		dedfault is 0.0
+
+	color: /*a color*/,
+		color of the divider
+		efault is based on theme
+
+	indent: 16.0,
+		amount of space inset at the start of the divider
+
+	endIndent: 16.0,
+		amount of space inset at the end o the divider
+)

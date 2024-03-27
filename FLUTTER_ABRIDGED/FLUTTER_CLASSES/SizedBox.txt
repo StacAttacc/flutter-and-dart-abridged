@@ -1,0 +1,19 @@
+basically a box with specific height and width
+usually to add empty space or enforce a certain layout
+
+SizedBox(
+	width: 100,
+		the width of the box
+
+	height: 100,
+		the height of the box
+
+	child: Container/*or something else*/(),
+		what will be inside the box
+
+	alignment: Alignment./*topLeft,centre,etc.*/,
+		where the box's child will be alignned
+
+	constraints: BoxConstraints(minWidth: 50, etc.)
+		enforce additional constraints to the box
+),

@@ -1,0 +1,42 @@
+specific type of provider to provide and manage ChangeNotifier
+
+ChangeNotifierProvider(
+	create: (context) => MyModel(),
+		returns instance of ChangeNotifier you want to provide
+		notifies when MyModel changes (it's an educated guess)
+
+	updateShouldNotify: (oldValue, newValue) => true,
+		optional
+		true by default
+		basically to decide if you should notifiy
+		descendants when changes are made or not
+
+	child: MyApp(),
+		the widget or subtree what will have access
+		to this provider
+)
+
+
+example from CGPT
+
+// Counter class
+class Counter extends ChangeNotifier {
+  int _count = 0;
+  int get count => _count;
+  
+  void increment() {
+    _count++;
+    notifyListeners(); // Notify listeners of the change
+  }
+}
+
+// Using ChangeNotifierProvider in your app
+void main() {
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => Counter(),
+      child: MyApp(),
+    ),
+  );
+}
+

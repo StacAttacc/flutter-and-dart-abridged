@@ -1,0 +1,38 @@
+it's another way to get the values from the Provider,
+rebuilds child when values change,
+sorry, really holding back on the jokes here
+
+Consumer<MyModel>(
+	builder(context, myModel, child){
+		build widget subtree from your model here
+		return SomeWidget(myModel: myModel);
+	},
+		required
+		called whenever the provided value changes
+
+	child: SomeWidgetThatDoesNotChange(),
+		does not rebuild when provided value changes
+		used to get better performance
+
+	listen: /*true,false*/,
+		true by default
+		determines if Consumer should rebuild if
+		provided value changes
+)
+
+example from CGPT
+class MyWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Consumer<Counter>(
+      builder: (context, counter, child) {
+        return RaisedButton(
+          onPressed: () {
+            counter.increment(); // Increment count when button is pressed
+          },
+          child: Text('Increment'),
+        );
+      },
+    );
+  }
+}

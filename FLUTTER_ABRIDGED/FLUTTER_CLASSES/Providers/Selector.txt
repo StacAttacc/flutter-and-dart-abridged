@@ -1,0 +1,86 @@
+basically onnly listen to certain parts of the provider
+and only rebuild when they change
+improves performance by not always changing EVERYTHING
+
+Selector<MyModel, String>(
+	selector: (context, myModel) => myModel.someValue,
+		it selects what part of the model to listen to
+	
+	builder: (context, value, child) {
+		Rebuild only when someValue changes
+		return Text(value);
+	},
+		receives the selcted part of the provided value
+		builds the widget subtree
+		(I may just be tired, but I'm wondering if there's dom 				trees out there yk? the world can't be complete if 				everyone's a sub and there's no dom,
+		it's like having racetracks, but no Flash McQueen,
+		also, wtf am I on lmfao
+		lemme tell ya, took some melatonin a few hours ago
+		I'm feeling it
+		hinges? who? where have they gone? HWAT?)
+
+	child: SomeWidgetThatDoesNotChange(),
+		widget that does not rebuild when provided value changes
+
+	shouldRebuild: (oldValue, newValue) => oldValue != newValue,
+		optional
+		determines if the shubtree shoud rebuild when
+		the selected value changes
+)
+
+example from CGPT
+//nested widgets
+class UserDetails extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Selector<User, String>(
+      selector: (context, user) => user.name,
+      builder: (context, name, child) {
+        return Text(name);
+      },
+    );
+  }
+}
+
+class UserProfile extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        UserDetails(),
+        Selector<User, String>(
+          selector: (context, user) => user.email,
+          builder: (context, email, child) {
+            return Text(email);
+          },
+        ),
+      ],
+    );
+  }
+}
+
+
+//conditional rebuild
+Selector<User, bool>(
+  selector: (context, user) => user.isLoggedIn,
+  builder: (context, isLoggedIn, child) {
+    return isLoggedIn ? UserProfile() : LoginScreen();
+  },
+)
+
+//multiple values
+Selector<User, Tuple2<String, String>>(
+  selector: (context, user) => Tuple2(user.firstName, user.lastName),
+  builder: (context, names, child) {
+    return Text('${names.item1} ${names.item2}');
+  },
+)
+
+//custom equality check
+Selector<User, String>(
+  selector: (context, user) => user.status,
+  shouldRebuild: (oldStatus, newStatus) => oldStatus != newStatus,
+  builder: (context, status, child) {
+    return Text(status);
+  },
+)

@@ -1,0 +1,29 @@
+Puts multiple providers into a single widget tree
+easier to manage them that way
+
+MultiProvider(
+	provider: [
+		ChangeNotifierProvider(create: (context => MyModel1())),
+		ChangeNotifierProvider(create: (context => MyModel2())),
+	],
+		required, the list of providers
+		you want to put into a single tree
+		each item provides a value to it's descendants
+
+	child: MyApp(),
+		widget or subtree that has access to the values
+)
+
+example from CGPT
+void main() {
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => Counter()),
+        Provider(create: (context) => ApiService()),
+        FutureProvider(create: (context) => UserRepository().fetchUser()),
+      ],
+      child: MyApp(),
+    ),
+  );
+}

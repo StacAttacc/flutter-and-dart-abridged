@@ -1,0 +1,17 @@
+builds widgets that dynamically move depending on their parent's
+constraints
+
+LayoutBuilder(
+	builder:(context, constraints){
+		// build widget here
+		return Container(
+			width: constraints.maxWidth,
+			height: constraints.maxHeight,
+			color: /*color*/,
+		);
+	},
+		builds the layout depending on your constraints
+
+	child: OtherWidget(),
+		can pass it to the builder
+)

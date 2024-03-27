@@ -1,0 +1,25 @@
+for additional info without luttering the screen
+like your hamburger menu
+
+needs a body:Center/*or whateva*/(child: /*widget*/)
+and
+/**Scaffold: drawer:**/
+Drawer(
+	elevation: /*number*/,
+		elevaton of a drawer to it's relative parent
+	
+	semanticLabel: 'Menu',
+		basically the drawer's title
+
+	childEdgeInset: EdgeInsets./*something, I'm tired*/,
+		amount of space the child is allowed when
+		the drawer is open
+
+	gestureRecognizer: (DragStartBehavior behavior) {
+		//custom gesture recognizer
+	},
+		some specific gesture that opens the drawer
+		like swipe left to open menu or something like that
+	
+	child: /*usually a listview with ListTile(onTap: (){})*/
+),

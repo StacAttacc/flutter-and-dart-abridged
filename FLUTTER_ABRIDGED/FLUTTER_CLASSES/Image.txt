@@ -1,0 +1,27 @@
+Image(
+	image: AssetImage('assets/image.png'),
+		image from assets
+
+	/*or*/ image: FileImage(File('/path/to/image.png')),
+		image from another path
+
+	/*or*/ image: MemoryImage(bytes),
+		image ffrom memory
+
+	width: 100,
+		width of the image
+
+	height: 100,
+		height of the image
+
+	fit: BoxFit./*look it up, I'm tired*/,
+		how the image should fit depending on the space available
+
+	repead: ImageRepeat./*repeat,repeatX,repeatY*/,
+		how the image will repeat
+
+	semanticLabel: 'Image description',
+		it's escription of the image
+)
+	
+

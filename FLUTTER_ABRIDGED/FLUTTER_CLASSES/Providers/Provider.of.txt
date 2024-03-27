@@ -1,0 +1,14 @@
+retrieves provided value of type <T> from nearest T
+
+var myModel = Provider.of<MyModel>(
+	context,
+		it's the context lol
+
+	listen: /*true,false*/,
+		true by default
+		basically tells if the widget will
+		rebuild when value from Provider changes
+
+	listen: (myModel){},
+		addditional stuff to do when value changes
+);

@@ -1,8 +1,0 @@
-displays it's children in a horizontal way
-
-Row(
-	children: <Widget>[],
-		the row's children, any other class
-
-	
-)

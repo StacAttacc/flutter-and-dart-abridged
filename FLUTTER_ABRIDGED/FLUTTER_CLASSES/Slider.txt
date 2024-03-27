@@ -1,0 +1,31 @@
+user can select a value from a continuous range
+by using a slider
+
+Slider(
+	value: _sliderValue,
+		the current value being selected by the slider
+
+	min: 0.0,
+		minimum value of the slider
+
+	max: 100.0, 
+		maximum value for the slider
+
+	divisions: 10,
+		basically slider, but with bumps if that makes sense
+		instead of 1,2,3,4,5,6,7,7,8,9,10,11
+		you do 0,10,20,30,40,50,60,70,80,90,100
+
+	label: '$_sliderValue',
+		basically what you put on the slider
+		usually the slider's value
+
+	onChanged: (newValue) {
+		setState(() {
+			_slideralue = newValue;
+		})
+	},
+		basically what happens when you slide the slider
+		don't forget the setState to make the system recognize
+		change
+)

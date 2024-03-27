@@ -8,10 +8,9 @@ Column(
 		where it'll put the children
 
 	mainAxisSize: MainAxisSize./*a size, usually*/,
-		how much space should be occupied in the main axis
+		how much space should be occupied in the main axis (vertical I think)
 		decide what to do with the size of the children
 		decide what to do with the extra space after the children
-		
 	
 	textBaseline: TextBaseline./*type of baseline*/,
 		basically the vertical allignment of the text

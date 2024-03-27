@@ -1,0 +1,24 @@
+used in Rows and Columns to control how the items occupy space
+similar to Expanded, but givs more flexibility, yup
+
+Row(
+	children: [
+		Flexible(
+			flex: 2,
+				how much space is allocated for the item
+
+			child: Container(color: Colors.blue),
+				item that will be flexibly sized with
+				the flex
+
+			fit: FlexFit./*tight,loose*/
+				how the widget should adapt the space
+				if it can't be flexibly sized
+
+    		),
+    		Flexible(
+      			flex: 1,
+      			child: Container(color: Colors.red),
+    		),
+  	],
+)

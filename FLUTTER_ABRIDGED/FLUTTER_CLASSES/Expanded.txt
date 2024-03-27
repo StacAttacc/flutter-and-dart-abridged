@@ -1,0 +1,23 @@
+usually used in Rows and columns and such
+
+Row(
+	children:[
+		Expanded(
+			flex: 2,
+				how much space should be allocated to
+				the item, relative to the other
+				items in the row/column/whatev
+				default is 1
+			
+			child: Container(),
+				what will be insite the Expanded
+		),
+		Expanded(
+			flexFit: FlexFit./*tight,loose*/,
+				adapts the widget depending on the
+				available space
+
+			child: Container(),
+		),
+	],
+)

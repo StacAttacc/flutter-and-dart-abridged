@@ -1,0 +1,24 @@
+make your text look cute
+
+you can add it to your yaml
+flutter:
+  fonts:
+    - family: CustomFont
+      fonts:
+        - asset: fonts/custom_font_regular.ttf
+        - asset: fonts/custom_font_bold.ttf
+          weight: 700
+
+TextStyle(
+	fontFamily: 'CustomFont',
+		what kind of font you'll use
+
+	fontSize: 20,
+		the size of your fonts
+
+	fontWeight: FontWeight./*bold,normal*/,
+		make it normal or thicc
+
+	fontStyle: FontStyle./*italic,normal*/,
+		make it italic or not
+)

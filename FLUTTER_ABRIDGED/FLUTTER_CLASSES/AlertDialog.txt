@@ -1,0 +1,25 @@
+basically a popup
+flutter has a function for that called showDialog
+
+showDialog(
+	context: context,
+	builder: (BuildContext context){
+		return AlertDialog(
+			title: Text(),
+				the popup's title
+			
+			content: Text(),
+				the popup's text
+
+			actions: [
+				TextButton(
+					onPressed: () {
+						Navigator.of(context).pop();
+							close it
+					},
+					child: Text('Close'),
+				)
+			],
+		),
+	},
+)

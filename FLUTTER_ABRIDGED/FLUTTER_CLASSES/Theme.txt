@@ -1,0 +1,26 @@
+define and applies consistent visuals to the app
+kinda like your css files
+
+ThemeData(
+	primaryColor: /*a color*/,
+	accentColor: /*a color*/,
+	textTheme: TextTheme(
+		headline1: TextStyle(),
+		bodyText1: TextStyle(),
+	),
+)
+	overall look and feel of the app
+
+Theme(
+	data: ThemeData(primaryColor, etc.),
+	child: MyApp(),
+)
+	used to apply a theme to a subtree of widgets
+
+ThemeData theme Data = Theme.of(context)
+	gets the theme from an ancestor
+
+MaterialApp(
+	theme: ThemeData(),
+	home: HomePage(),
+)

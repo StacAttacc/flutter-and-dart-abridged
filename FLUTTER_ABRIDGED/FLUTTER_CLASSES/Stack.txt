@@ -1,0 +1,27 @@
+you can use this to stack widgets on top of each other like sardines
+or to position a widget specifically at some spot in a container
+
+Stack(
+	children: [
+		Container(color: Colors.blue, width: 100, height: 100),
+    		Container(color: Colors.red, width: 80, height: 80),
+	],
+		list of widgets what will be on top of each other
+		the lists's order determines their stacking order
+		last one in tops
+
+	alignment: Alignment./*topLeft,center,you already know*/
+		used to align the list thingys
+
+	overflow: Overflow./*clip,visible*/
+		when it overflows,
+		do you want to clip it or let the world see?
+		your preferences, I won't judge
+
+	fit: StackFit./*loose,expand*/,
+		determines how non-positioned items are resized
+		in the stack
+
+	textDirection: TextDirection./*ltr,rtl*/
+		either left to right or right to left
+)

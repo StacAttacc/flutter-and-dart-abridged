@@ -1,0 +1,24 @@
+Used to share states accross widgets and manage them without doing it manualy
+
+Provider<Model>(
+	create: (context) => MyModel(),
+		callback function
+		thing that will be shared with it's descendants
+		think nepotism and inheritance
+
+	dispose: (context, myModel) => myModel.dispose(),
+		optional callback function
+		disposes of the provider when
+		it's removed from the widget tree
+
+	lazy: /*false,true*/,
+		false for eager, true for lazy
+
+	updateShouldNotify: (oldValue, ewValue) => true,
+		optional
+		if true, notifies widgets if the value is changed
+		if false, it doesn't notify
+
+	child: MyApp(),
+		widget or subtree that will get provided
+)

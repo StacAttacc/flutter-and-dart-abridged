@@ -1,0 +1,23 @@
+displays it's children in a horizontal way
+
+Row(
+	children: <Widget>[],
+		the row's children, any other class
+
+	mainAxisAlignment: MainAxisAlignment./*start,center,end,spaceAround*/
+		how the children are aligned horizontally
+	
+	crossAxisAllignment: CrossAxisAlignment./*start,center,end,stretch*/
+		how the children are aligned vertically
+
+	mainAxisSize: MainAxisSize./*min,max*/
+		how much space the children occupy horizontally
+
+	textDirection: TextDirection./*ltr,rtl*/
+		text goes from left to right usually,
+		but you can do it the other way
+
+	verticalDirection: VerticalDirection./*up,down*/
+		up -> children will be placed from bottom to top
+		down -> children will be placed from top to bottom
+)
