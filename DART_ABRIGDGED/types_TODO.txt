@@ -28,8 +28,15 @@ num
 		cannot put a double into num
 			num -> slutty top (exclusively)
 			int & double -> bottoms
-when doing a long text, you can
 
+
+
+
+
+
+
+
+when doing a long text, you can
 	String stuff = """
 		wow
 		this
@@ -38,9 +45,14 @@ when doing a long text, you can
 		really
 		long
 	"""
-when adding strings instead of
+when adding strings instead of:
 	"jasdkfuha sdfiuhadf liuahsf" + number.toString(); <- beta javahead
+	do:
 	"jasdkfuha sdfiuhadf liuahsf ${s1}"; <- gigachad dart user
+
+also, use StringBuffer instead of String if you planon chaning a string a lot
+
+do print(r"\n \u12312") to tell them no don't interpret the special characters
 
 
 
