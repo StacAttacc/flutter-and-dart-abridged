@@ -1,3 +1,32 @@
 var
+	can change stuff, like any variable
+
 final
+	final assigns the slot, you cannot change who's assigned
+		but you can change the assigned object's attributes
+	basically, like reserving a spot for a haircut after it's assigned
+		can't change the time for the haircut
+		can change the hairstyle, iykwim
+
 const
+	constant, can't change shit
+
+
+
+when -> var yourVariable = const someUnchangeableValue;
+		basically assign yourVariable's slot to someUnchangeableValue;
+			you can always change who's assigned to the slot
+			you cannot change their values
+
+oki so, usually, it's like this:
+	var variable = var value;
+		but the var in "var value" is silent
+
+but then, you can be like:
+	var variable = const value1;
+	var varibale = final value2;
+		you can change if variable's value is gonna be value is gonna be
+			value1 or value2
+		but you cannot be like:
+			value1 = urMum or value2 = jaskhfejfusahf
+		I hope that made sense
