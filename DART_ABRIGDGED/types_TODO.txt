@@ -1,15 +1,21 @@
 var
-	can change stuff, like any variable
-
+	can change stuff, like any variable, but once the type is set, it's set
 final
 	final assigns the slot, you cannot change who's assigned
 		but you can change the assigned object's attributes
 	basically, like reserving a spot for a haircut after it's assigned
 		can't change the time for the haircut
 		can change the hairstyle, iykwim
-
 const
 	constant, can't change shit
+let
+	better than var
+String
+	assigns the set
+dynamic
+	you can change the variabe's type in runtime
+
+
 
 
 
