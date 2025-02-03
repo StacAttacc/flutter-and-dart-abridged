@@ -14,6 +14,36 @@ String
 	assigns the set
 dynamic
 	you can change the variabe's type in runtime
+late SomeType
+	"late" tells them: "trust bro, I'll assign it later"
+SomeType?
+	"?" means it could also be null
+		avoids null errors, in case you didn't catch
+		make sure they actually have a value at some point tho
+num
+	could be an int or a double
+		can put a int into a num
+		can put double into a num
+		cannot put a num in a int
+		cannot put a double into num
+			num -> slutty top (exclusively)
+			int & double -> bottoms
+when doing a long text, you can
+
+	String stuff = """
+		wow
+		this
+		text
+		is
+		really
+		long
+	"""
+when adding strings instead of
+	"jasdkfuha sdfiuhadf liuahsf" + number.toString(); <- beta javahead
+	"jasdkfuha sdfiuhadf liuahsf ${s1}"; <- gigachad dart user
+
+
+
 
 
 
