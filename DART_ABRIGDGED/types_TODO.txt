@@ -14,6 +14,8 @@ String
 	assigns the set
 dynamic
 	you can change the variabe's type in runtime
+	use "as" to tell dynamic wtf it is
+		dynamic variable = thing as OtherThing
 late SomeType
 	"late" tells them: "trust bro, I'll assign it later"
 SomeType?
