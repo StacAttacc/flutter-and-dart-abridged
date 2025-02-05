@@ -33,3 +33,8 @@ reduce and fold basically reduces list into a single value
 	reduce can't be used on empty lists with
 		functions that return the same type as the stuff in the collection
 	fold can be used on everything basically, even empty stuff
+
+spread operator ...list
+	basically takes the elements of the ilsts instead of the list itself
+	so instead of taking [1,1,1,1,1,1]
+		it takes 1 and 1 and 1 and 1 and 1 and 1 individually
