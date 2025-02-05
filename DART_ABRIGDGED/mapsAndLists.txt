@@ -1,0 +1,4 @@
+Map & Hashmap -> key order is the same as key insertion
+HashMap -> no key order in any way (performance++)
+SplayMap -> key order is rising (alphabetical/numeric/whatever used to compare)
+	lowest first highest last (not making a drug reference this time)
