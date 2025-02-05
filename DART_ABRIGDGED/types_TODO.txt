@@ -19,9 +19,18 @@ dynamic
 late SomeType
 	"late" tells them: "trust bro, I'll assign it later"
 SomeType?
-	"?" means it could also be null
-		avoids null errors, in case you didn't catch
-		make sure they actually have a value at some point tho
+	"?" means the variable is nullable/can be null
+	you can't assign this variable to one that can't be null tho, so be careful
+SomeType!
+	"!" tells them: "it's null rn, but trus bro, it won't be when you use it"
+	you NEED to assign a value to it before you use it
+		or the computer is gonna crashout on your lazy ass
+SomeType??
+	"??" baically checks if stuff is null
+	variable??= value means if variable is null, pull value in it
+	variable?? otherVariable means:
+		if variable is not null, use variable
+		if variable is null, use otherVariable
 num
 	could be an int or a double
 		can put a int into a num
@@ -30,6 +39,8 @@ num
 		cannot put a double into num
 			num -> slutty top (exclusively)
 			int & double -> bottoms
+null
+	you CAN declare stuff as null because why tf not
 
 
 

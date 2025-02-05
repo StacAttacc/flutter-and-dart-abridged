@@ -2,3 +2,34 @@ Map & Hashmap -> key order is the same as key insertion
 HashMap -> no key order in any way (performance++)
 SplayMap -> key order is rising (alphabetical/numeric/whatever used to compare)
 	lowest first highest last (not making a drug reference this time)
+Set -> list of unique items only
+
+to check if collection is empty or not:
+	isEmpty/isNotEmpty -> gigachad dart user
+	.length/!collection.isEmpty -> beta javahead
+
+CONFUSING THING WITH list.map
+	you can do list.map()
+		it's equivalent to java's stream api's list.stream.map(() => {});
+		it creates a new map
+	it's NOT the same as list.toMap()
+	it CREATES a new LIST
+	it DOES  NOT turn a list into a map
+
+you can put conditionals directly in your lists ex:
+	list = [1,2,3, if (something's true) 4, if (something's false) 5, etc.]
+
+you can also:
+	check if every element is something:
+		list.every((element) => element > 0);
+	create lists this way:
+		List<int>.filled(5/*indexes*/,1/*values in the indexes*/);
+			fills list of 5 elements with values of 1
+		List<int>.generate(10, (index) => index + index);
+			creates list of even numbers
+
+reduce and fold basically reduces list into a single value
+	useful for calculation your grades and other stuff
+	reduce can't be used on empty lists with
+		functions that return the same type as the stuff in the collection
+	fold can be used on everything basically, even empty stuff
