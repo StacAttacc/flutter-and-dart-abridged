@@ -20,7 +20,6 @@ named parameters in fuctions are optional if it has a non-null default value
 	so no *need to put them in the function call*
 	can only be daclared after non-optional parameters
 	can have default values (used when not specified during call)
-	
 	[QUARE BRACES] mean optional positional parameters
 		getPort(String server, String path, [int port = 80]);
 			port is optional

@@ -1,0 +1,35 @@
+you can destructure a json using patternMatching and factories
+  Partie(
+      {required this.partie_id,
+      required this.seed,
+      required this.partie_ts,
+      required this.mot,
+      required this.joueur_id,
+      required this.nom,
+      required this.ts});
+
+  factory Partie.fromJson(Map<String, dynamic> json) {
+    if (json
+        case {
+          "partie_id": String partie_id,
+          "seed": String seed,
+          "partie_ts": {"value": String partie_ts},
+          "mot": String mot,
+          "joueur_id": String joueur_id,
+          "nom": String nom,
+          "ts": {"value": String mot_ts}
+        }) {
+      return Partie(
+        partie_id: partie_id,
+        seed: int.parse(seed),
+        partie_ts: partie_ts,
+        mot: mot,
+        joueur_id: joueur_id,
+        nom: nom,
+        ts: mot_ts,
+      );
+    } else {
+      throw Exception('Failed to load Partie');
+    }
+  }
+

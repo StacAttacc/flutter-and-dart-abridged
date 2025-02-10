@@ -1,0 +1,23 @@
+you can check for the data's type
+	if (data is List) {}
+		it will go true if the data is indeed a list
+
+you can check the data's structure
+	var data = [4, 5];
+	if (data case [int x, int y]){}
+		it will go true if the data is a list of 2 numbers
+
+you can also use those in switch cases
+	case [a, b]:
+		pour une liste
+	case ():
+		pour un record
+	case [1 || 2 || 3, var b]:
+		une liste de 2 elements, le premier est un if avec des ||
+			le deuxieme est une variable quelconque
+	case {"un": a, "deux: b"}:
+		un map avec deux clés et deux values
+	default:
+		do nothing
+
+FRANGLAIS 100
