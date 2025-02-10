@@ -1,0 +1,42 @@
+class Personne {
+  	final String _nom;
+  	final String _prenom;
+
+  	Personne(this._nom, this._prenom);
+}
+
+void main() {
+  	final pere = Personne("Tremblay", "Robert");
+  	final mere = Personne("Dufour", "Celine");
+  	final fils = Personne("Didier", "Tremblay");
+
+  	final notreFamille = pere + mere + fils;
+  	print(notreFamille);
+  	print(notreFamille.runtimeType);
+}
+
+====================================================================
+how that fucking works??? WTF DO YOU MEAN YOU CAN ADD THOSE FUCKING THINGS TOGETHER?????
+basically, you can overide stuff like the add operator
+in this case, you tell it that
+	if you add people together, create a Family object with a list containing them as members
+	if you add two families together, add their members list together
+	if you wanna add someone to a list, add them to the members list
+
+it's a LOT simpler than it looks, it's just unusual, get more cultured you scrub
+
+class Famille{
+	List<Personne> _family;
+	Famille(List<Personne> members) : this._family = members;
+	List<Personne> members() {
+		return this._family;
+	}
+
+	Famille operator +(Object autreMembre){
+		if (autreMembre is Famille){
+			return Famille([...this.membres], ...(autreMembre as Famille).membres());
+		} else {
+			return Famille([...this.membres(), autreMembre as Personne]);
+		}
+	}
+}
