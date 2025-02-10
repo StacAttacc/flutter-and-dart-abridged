@@ -1,3 +1,42 @@
 list.map((element) => {do stuff});
 	=> means the return is implicit
 	is mostly used for small functions
+
+you can declare functoins like this
+	(_) => do stuff; accepts params, but ignore it
+	(int val) => do stuff; => one line function;
+	(_) => {
+		do stuff;
+	}	
+			multi line functions
+	void fuction() {} regular thing
+
+named parameters in fuctions are optional if it has a non-null default value
+	HOWEVER, you can make it non optional by adding required to it's name
+		String ndslsfhsdkflhaldh(required String paramA){}
+		if it's required, you NEED to put paramA in function calls
+
+{CURLY} & [SQUARE] brackets in function params are two types of optional params
+	so no *need to put them in the function call*
+	can only be daclared after non-optional parameters
+	can have default values (used when not specified during call)
+	
+	[QUARE BRACES] mean optional positional parameters
+		getPort(String server, String path, [int port = 80]);
+			port is optional
+			port has default value 80
+			call call with
+				getPort(someServer, somePath); //port is 80
+				getPort(someServer, somePath, 1); // port is 1
+		getPort2(String p1, p2, [int p3 = 9, int p4 = 10]);
+			p3 and p4 are optional with default values
+			can call with
+				getPort(v1, v2); //p3 is 9, p4 is 10
+				getPort(v1,v2,45); //p3 is 45, p4 is 10
+				getPort(v1,v2,56,67) // p3 is 56 p4 is 67
+	
+	{CURLY BRACES} is basically the same, but they're named
+			so it's easier to read
+		getPort(String server, String path, {int port = 80});
+			port(someServer, somePath, port: 1);
+				see? easier to read right?	
