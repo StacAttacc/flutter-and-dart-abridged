@@ -1,0 +1,3 @@
+list.map((element) => {do stuff});
+	=> means the return is implicit
+	is mostly used for small functions

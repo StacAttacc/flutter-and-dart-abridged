@@ -18,6 +18,8 @@ CONFUSING THING WITH list.map
 
 you can put conditionals directly in your lists ex:
 	list = [1,2,3, if (something's true) 4, if (something's false) 5, etc.]
+you can also stock functions in a list
+	list = [Functoin1, Function2, Function3]
 
 you can also:
 	check if every element is something:
