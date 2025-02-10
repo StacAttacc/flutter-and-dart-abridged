@@ -1,0 +1,40 @@
+class Coordonnees{
+	final num x;
+	final num y;
+	final num z;
+	Coordonnees(this.x, this.y, this.z);
+	factory Coordonnees.fromJson(Map<String, dynamic> json) {
+		return Coordonnees(
+			json["x"],
+			json["y"],
+			json["z"],
+		)
+	}
+	@override
+	String toString(){
+	return "$x $y $z";
+	}
+}
+
+more complex factory
+class MaFactory {
+	static final Random _random = Random(); 
+  	final UneClasse _uneClasse;
+	factory MaFactory() {
+	    	int randomInt = _random.nextInt(3);
+    		switch (randomInt) {
+      			case 0:
+        			return MaFactory._internal(UneClasseA());
+      			case 1:
+        			return MaFactory._internal(UneClasseB());
+      			case 2:
+       	 			return MaFactory._internal(UneClasseC());
+      			default:
+        			return MaFactory._internal(UneClasseC());
+    		}
+ 	}
+  	MaFactory._internal(this._uneClasse);
+  	void methode() {
+    		_uneClasse.methodeAbstraite();
+  	}
+}

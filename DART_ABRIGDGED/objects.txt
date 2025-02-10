@@ -1,0 +1,75 @@
+no need to use new to create new objects
+constructors need to be unique
+constructors need to have the same name as the class like in java
+
+====================================================================
+to initialize classes you can use late
+class Personne{
+	late String name;
+	Personne(String name){
+		this.name = name;
+	}
+}
+
+====================================================================
+you can use initializer lists
+class Personne{
+	final String _name;
+	final String _thing;
+	Personne(String name, String thing) : _name = name, _thing = string;
+}
+
+====================================================================
+you can also initialize it this way
+class PErsonne{
+	final String name;
+	Personne(this.name);
+}
+
+====================================================================
+you can also have different constructors to specify
+	params that are't specified in other constructors
+class Personne{
+	final String _name;
+	final String _thing;
+	final int _age;
+	Personne(String name, String thing) : _name = name, _thing = string;
+	Personne.age(String name, String thing, int age)
+		: _name = name, _thing = string{
+		this._age = age;
+	}
+
+}
+
+====================================================================
+you can initialize objects like this too if you're feeling lazy today
+thing..attribute1 = "a"..attribute2="ajsd"..attribute3="waaagh"
+
+====================================================================
+you can inherit stuff
+class Personne {
+  	late String nom;
+  	late String prenom;
+  	int? age;
+  	Personne(String nom, String prenom) {
+    		this.nom = nom;
+    		this.prenom = prenom;
+  	}
+}
+class Employe extends Personne {
+  	late String numeroEmploye;
+  	Employe(String nom, String prenom, String numeroEmploye)
+      		: super(nom, prenom) {
+    		this.numeroEmploye = numeroEmploye;
+  	}
+}
+
+====================================================================
+you can put const on the constructor to make it unmodifiable
+	you'd also need it at the instantiation tho
+class Personne {
+  	final String nom;
+  	final String prenom;
+  	const Personne(this.nom, this.prenom);
+}
+final someDude = const Personne("some", "dude");
